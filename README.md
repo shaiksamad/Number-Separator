@@ -11,4 +11,6 @@ Use separator() function to format number (eg: 123456 --> 1,23,456)
     Default: ",": Comma is most used number separator
     you can use dots and Spaces
     
+Returns comma separated number (type str)
+    
     
