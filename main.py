@@ -20,11 +20,11 @@ def separator(num: int, sys=INT_SYS, sep=","):
     num //= 1000
     if sys:
         while num:
-            final = str(sep) + f"00{num % 100}"[-2:] + final
+            final = sep + f"00{num % 100}"[-2:] + final
             num //= 100
     else:
         while num:
-            final = str(sep) + f"000{num % 1000}"[-3:] + final
+            final = sep + f"000{num % 1000}"[-3:] + final
             num //= 1000
 
     final = final[1:]
@@ -33,6 +33,4 @@ def separator(num: int, sys=INT_SYS, sep=","):
 
 
 if __name__ == "__main__":
-    # for testing
-    while 1:
-        print(separator(int(input())))
+    print(separator(int(input()), IND_SYS))
