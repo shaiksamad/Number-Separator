@@ -1,5 +1,5 @@
 function separator(num, sep=",") {
-    num = num.toString()
+    num = num.toString().replace(",", "")
     if (num.length <= 3) return num
     final = sep+num.slice(-3)
     num = num.slice(0, -3)
